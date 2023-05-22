@@ -1,0 +1,33 @@
+{% extends 'MainApp/base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+<!-- Home Main content block -->
+{% block main %}
+
+  <div id="home-page-container">
+    
+    <div class="profile">
+      <div class="profile-photo">
+        <img class="profile-pic" src="{% static 'images/bg1.png' %}" alt="profile-icon">
+      </div>
+      <div class="profession">
+        <span><i class="fa fa-graduation-cap "></i></span> 
+        <p> Software Engineer</p>
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="profile-info">
+        <p class="greeting">Hi, am</p>
+        <h1 class="profile-name">Peter Nyando</h1>
+        <h1 class="profession-title"></h1>
+        <p id="whoami" >"Am a Software Engineer with five years of experience, Am a Fullstack Development and A Pentester, I also help startups start and Launch their Projects,|| I love to be build staffs for the web"</p>
+        <button class="contact-me-btn"> Contacct Me</button>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock main %}

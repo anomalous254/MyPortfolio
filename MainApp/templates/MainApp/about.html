@@ -1,0 +1,33 @@
+{% extends 'MainApp/base.html' %}
+{% load static %}
+
+{% block title %} About-Me {% endblock title %}
+
+<!-- About Main content block -->
+{% block main %}
+  <div id="about-container">
+    <div class="about-info-container">
+      <div class="about-info-head">
+        <h4>Welcome To my About page <span><i class="fa-sharp fa-solid fa-face-smile fa-shake fa-2xl "></i></span> </h4>
+      </div>
+      <div class="about-infos">
+        <div class="about-profession">
+          <p>I am,</p>
+          <h2 >A Software <br> Engineer</h2>
+          <h3 class="profession-title" ></h3>
+        </div>
+        <div class="about-more-info">
+          <ul>
+            <li><span>></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-achievments">
+      <div class="achievments-head">
+        <h1><span><i class="fa-sharp fa-solid fa-trophy fa-bounce fa-xl"></i></span> Achievments</h1>
+      </div>
+    </div>
+  </div>
+{% endblock main %}

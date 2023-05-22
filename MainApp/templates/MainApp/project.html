@@ -1,0 +1,60 @@
+{% extends 'MainApp/base.html' %}
+{% load static %}
+
+{% block title %} Projects {% endblock title %}
+
+<!-- Project Main content block -->
+{% block main %}
+  <div id="projects-body">
+    <div class="projects-container">
+      <div class="project-greeting">
+        <h2>Welcome To my Projects Page || <span>{{projects.count}} Projects</span></h2>
+      </div>
+      <div class="projects-items-container">
+
+        {% for project in projects reversed %}
+        {% if project.project_link %}
+        <a class="project-link" href="{{project.project_link}}" target="_blank">
+        <div class="project">
+          <h2>Project-{{project.projectName}}</h2>
+          <h3><span><i class="fa-sharp fa-solid fa-link fa-spin"></i></span> {{project.project_link}}</h3>
+          <p>Uploaded {{project.date_uploaded | timesince}} ago</p>
+        </div>
+        </a>
+        {% else %}
+        <a class="project-link" href="#">
+        <div class="project">
+          <h2>Project-{{project.projectName}}</h2>
+          <h3><span><i class="fa-sharp fa-solid fa-code"></i></span> Under Development</h3>
+          <p>Uploaded {{project.date_uploaded | timesince}} ago</p>
+        </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+    <div class="activity-container">
+      <div class="activity-head">
+        <h2><i class="fa-sharp fa-solid fa-bell fa-bounce fa-xl"></i> <span>[ {{projects.count}} ]</span> Activities</h2>
+      </div>
+      <div class="activity-items-container">
+
+        {% for project in projects reversed %}
+        <div class="activity-items">
+         <div class="activity-profile">
+          <img class="activity-pic" src="{% static 'images/bg2.png' %}" alt="profile icon">
+          <div class="activity-details">
+          <p><span>@Peter Nyando</span></p>
+          <h4>Uploaded Project - <span>"{{project.projectName}}"</span></h4>
+          <p>{{project.date_uploaded | timesince}} ago</p>
+         </div>
+        </div>
+         </div>
+         
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+{% endblock main %}
