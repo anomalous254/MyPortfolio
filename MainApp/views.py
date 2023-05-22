@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from .models import Project
+from .models import Project, About, Achievements
 
 # Home page view route
 def home(request):
@@ -14,4 +14,7 @@ def projects(request):
 
 # About page view route
 def about(request):
-  return render(request, 'MainApp/about.html')
+  achievements = Achievements.objects.all()
+  abouts = About.objects.all()
+  context = {"abouts": abouts, "achievments": achievements}
+  return render(request, 'MainApp/about.html', context)

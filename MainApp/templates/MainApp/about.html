@@ -17,16 +17,51 @@
           <h3 class="profession-title" ></h3>
         </div>
         <div class="about-more-info">
-          <ul>
-            <li><span>></span></li>
-          </ul>
+          {% for about in abouts %}
+          <div class="about-one">
+            
+            <ul>
+              <span>Am, {{about.name}}</span>
+              <li><span>></span> Website: <span class="span2">{{about.website}}</span> </li>
+              <li><span>></span> Location: <span class="span2">{{about.location}}</span> </li>
+              <li><span>></span> Phone: <span class="span2">{{about.phone}}</span> </li>
+              <li><span>></span> Freelance: <span class="span2">{{about.freelance}}</span> </li>
+            </ul>
+          </div>
+          <div class="about-two">
+            <ul>
+              <li><span>></span> Degree: <span class="span2">{{about.degree}}</span>  </li>
+              <li><span>></span> Course: <span class="span2">{{about.course}}</span> </li>
+              <li><span>></span> Institution: <span class="span2">{{about.school}}</span> </li>
+              <li><span>></span> Studying: <span class="span2">{{about.study}}</span>  </li>
+            </ul>
+          </div>
+          {% endfor %}
         </div>
       </div>
+      {% for about in abouts %}
+      <div class="about-details">
+            <p>"{{about.about}}"</p>
+      </div>
+      {% endfor %}
     </div>
-
     <div class="about-achievments">
       <div class="achievments-head">
         <h1><span><i class="fa-sharp fa-solid fa-trophy fa-bounce fa-xl"></i></span> Achievments</h1>
+      </div>
+      <div class="achievments-items-container">
+        <div class="achievments-item">
+          <h2>Happy Clients</h2>
+          <span class="num" data_val="200">000</span>
+        </div>
+        <div class="achievments-item">
+          <h2>Projects</h2>
+          <span class="num" data_val="250">000</span>
+        </div>
+        <div class="achievments-item">
+          <h2>Stars</h2>
+          <span class="num" data_val="340">000</span>
+        </div>
       </div>
     </div>
   </div>
