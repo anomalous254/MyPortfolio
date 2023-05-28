@@ -1,3 +1,4 @@
+pip==23.1.2
 adal==1.2.2
 adblockparser==0.7
 aiohttp==3.7.4
