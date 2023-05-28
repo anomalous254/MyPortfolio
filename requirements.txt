@@ -3,13 +3,12 @@ adblockparser==0.7
 aiohttp==3.7.4
 altgraph==0.17
 aniso8601==8.1.1
-gunicorn==20.1.0
 antlr4-python3-runtime==4.9.1
 anyio==3.6.2
 apparmor==2.13.6
 applicationinsights==0.11.9
 argcomplete==1.8.1
-asgiref==3.6.0
+asgiref==3.3.0
 asn1crypto==1.4.0
 async-timeout==3.0.1
 attrs==20.3.0
@@ -379,7 +378,7 @@ ipdb==0.13.3
 iptools==0.6.1
 ipwhois==0.15.1
 ipython==7.20.0
-ipython-genutils==0.2.0
+ipython_genutils==0.2.0
 isodate==0.6.0
 itsdangerous==2.1.2
 javaproperties==0.7.0
@@ -453,7 +452,7 @@ ply==3.11
 portalocker==2.2.1
 prettytable==0.7.2
 prompt-toolkit==3.0.14
-protobuf==3.20.3
+protobuf==4.21.12
 psutil==5.8.0
 psycopg2==2.8.6
 publicsuffix2==2.20191221
@@ -482,7 +481,7 @@ pyminifier==2.1
 pymongo==3.11.0
 PyMsgBox==1.0.9
 pymssql==2.1.4
-PyMySQL==1.0.3
+PyMySQL==0.9.3
 PyNaCl==1.4.0
 pynvim==0.4.2
 pyodbc==4.0.30
@@ -580,7 +579,7 @@ torrequest==0.1.0
 tqdm==4.57.0
 traitlets==5.0.5
 Twisted==22.10.0
-typing-extensions==4.4.0
+typing_extensions==4.4.0
 uamqp==1.2.13
 ufw==0.36
 unicodecsv==0.14.1
