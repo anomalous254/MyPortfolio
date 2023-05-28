@@ -1,0 +1,66 @@
+{% extends 'MainApp/base.html' %}
+{% load static %}
+
+{% block title %} Contacts {% endblock title %}
+
+<!-- About Main content block -->
+{% block main %}
+  <div id="contacts-container">
+    <div class="contacts-info-container">
+      <div class="contact-intro">
+        <h4>Welcome To my Contact page <span><i class="fa-sharp fa-solid fa-address-card fa-shake fa-2xl "></i></span> </h4>
+      </div>
+      <div class="contact-profiles">
+        <div class="profiles-container">
+          <div class="profiles">
+            <span><i class="fa-sharp fa-solid fa-location-dot fa-shake fa-2xl "></i></span>
+            <p>Kisimu/Kenya</p>
+          </div>
+          <div class="profiles">
+            <span><i class="fa-sharp fa-solid fa-envelope fa-shake fa-2xl "></i></span>
+            <p>anomalous254@gmail.com / peternyando2@gmail.com</p>
+          </div>
+          <div class="profiles">
+            <span><i class="fa-sharp fa-solid fa-phone fa-shake fa-2xl "></i></span>
+            <p>+254769507699 / +254101167765</p>
+          </div>
+          <div class="social-links">
+            <span class="span-links"> <i class="fa-sharp fa-solid fa-share-nodes fa-2xl"></i> <H1>Social Profiles</H1></span>
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.github.com/anomalous254" target="_blank"><span><i class="fa-brands fa-github fa-beat-fade fa-2xl"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/anomalous254" target="_blank"><span><i class="fa-brands fa-facebook fa-beat-fade fa-2xl"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/anomalous254" target="_blank"><span><i class="fa-brands fa-whatsapp fa-beat-fade fa-2xl"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/anomalous254" target="_blank"><span><i class="fa-brands fa-instagram fa-beat-fade fa-2xl"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/anomalous254" target="_blank"><span><i class="fa-brands fa-twitter fa-beat-fade fa-2xl"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/anomalous254" target="_blank"><span><i class="fa-brands fa-discord fa-beat-fade fa-2xl"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="hire-btn">Hire Me</button>
+      </div>
+    </div>
+    <div class="contact-map-container">
+      <div class="map-responsive">
+        <iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyAJifc7pwvUkN0yrtn7BPn8I-lRg33PSNc&center=-0.09750361504784591,34.7545623779297&zoom=14&maptype=satellite" ></iframe>
+      </div>
+    </div>
+  </div>
+{% endblock main %}

@@ -18,3 +18,8 @@ def about(request):
   abouts = About.objects.all()
   context = {"abouts": abouts, "achievments": achievements}
   return render(request, 'MainApp/about.html', context)
+
+# Contact page view route
+def contact(request):
+
+  return render(request, 'MainApp/contact.html')

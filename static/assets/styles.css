@@ -523,3 +523,89 @@ footer{
 .achievments-item > span{
   font-size: x-large;
 }
+
+/*#######################################################################*
+ *                   Contact Page CSS Styles                             *
+ *#######################################################################*/
+
+/*
+ * **********************************
+ *  Root css styles for Contact page
+ * **********************************
+ */
+#contacts-container{
+  display: flex;
+  justify-content: space-between;
+}
+/*
+ * **********************************
+ *  Map css styles for Contact page
+ * **********************************
+ */
+ .contacts-info-container{
+  flex: 1;
+ }
+ .profiles-container{
+  background-color:  var(--white-darken-1);
+  border-radius: 3px;
+  margin-top: 10px;
+  color: gray;
+  padding: 20px;
+  box-shadow: inset 0 0 10px var(--top-bar-col);
+ }
+ .span-links{
+  display: flex;
+  align-items: center;
+  margin: 60px 0 30px;
+ }
+ .span-links > i {
+  margin-right: 10px;
+ }
+ .profiles{
+  display: flex;
+  align-items: center;
+  line-height: 3.3;
+  text-align: left;
+ }
+ .profiles > span{
+  margin-right: 30px;
+ }
+  .social-links{
+    margin-top: 20px;
+  }
+ .social-icons{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .contact-intro > h4{
+  font-size: 1.3rem;
+ }
+ .hire-btn{
+  padding: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+  width: 60%;
+  font-size: 1.5rem;
+  font-family: var(--font-fam);
+  background-color: var(--top-bar-col);
+  outline: none;
+  border: none;
+  color: white;
+  transition: all 350ms ease;
+ }
+ .hire-btn:hover{
+  opacity: .6;
+ }
+
+/*
+ * **********************************
+ *  Map css styles for Contact page
+ * **********************************
+ */
+ iframe{
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--top-bar-col);
+ }

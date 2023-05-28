@@ -1,0 +1,64 @@
+<BS>
+├── db.sqlite3
+├── LICENSE
+├── MainApp
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0002_alter_project_project_link.py
+│   │   ├── 0003_about.py
+│   │   ├── 0004_about_phone.py
+│   │   ├── 0005_about_name.py
+│   │   ├── 0006_about_about.py
+│   │   ├── 0007_achievements.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── 0001_initial.cpython-39.pyc
+│   │       ├── 0002_alter_project_project_link.cpython-39.pyc
+│   │       ├── 0003_about.cpython-39.pyc
+│   │       ├── 0004_about_phone.cpython-39.pyc
+│   │       ├── 0005_about_name.cpython-39.pyc
+│   │       ├── 0006_about_about.cpython-39.pyc
+│   │       ├── 0007_achievements.cpython-39.pyc
+│   │       └── __init__.cpython-39.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-39.pyc
+│   │   ├── apps.cpython-39.pyc
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── models.cpython-39.pyc
+│   │   ├── urls.cpython-39.pyc
+│   │   └── views.cpython-39.pyc
+│   ├── templates
+│   │   └── MainApp
+│   │       ├── about.html
+│   │       ├── base.html
+│   │       ├── home.html
+│   │       └── project.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── manage.py
+├── portfolio
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-39.pyc
+│   │   ├── settings.cpython-39.pyc
+│   │   ├── urls.cpython-39.pyc
+│   │   └── wsgi.cpython-39.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── README.md
+└── static
+    ├── assets
+    │   ├── main.js
+    │   └── styles.css
+    └── images
+        ├── bg1.png
+        ├── bg2.png
+        └── programmer.png
+
