@@ -29,7 +29,8 @@ values.forEach((value) => {
 
 });
 
-// activity close button logic block
-/* let closer = document.querySelector("#activity-close-btn");
-console.log(closer)
- */
+// Menu bar toggle logic
+function change() {
+  console.log('btn clicked')
+  $("#small-view").toggle(500);
+}

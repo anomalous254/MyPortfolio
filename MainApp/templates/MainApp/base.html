@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{% static 'assets/styles.css' %}">
+  <link rel="icon" href="{% static 'images/bg3.png' %}">
   <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
   <title>{% block title %} Template {% endblock title %}</title>
 </head>
@@ -37,8 +38,9 @@
           <li><span>01.</span><a href="{% url 'about' %}">About</a></li>
           <li><span>02.</span><a href="{% url 'contact' %}">Contacts</a></li>
           <li><span>03.</span><a href="{% url 'projects' %}">Projects</a></li>
-          <li><a href="{% static 'resume/resume.pdf' %}"  target="_blank"><button id="resume-btn-link">Resume</button></a></li>
+          <li><a href="#"  target="_blank"><button id="resume-btn-link">Resume</button></a></li>
         </ul>
+        <button onclick="change()" id="menu-btn"><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></button>
       </nav>
 
     {% endblock navbar %}
@@ -51,6 +53,18 @@
 
     {% endblock main %}
     </main>
+    <!-- Menu container for Small Views  -->
+    <div id="small-view">
+      <div class="navigations">
+        <ul class="small-links">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'contact' %}">Contacts</a></li>
+          <li><a href="{% url 'projects' %}">Projects</a></li>
+          <li><a href="{% static 'resume/resume.pdf' %}"  target="_blank"><button id="resume-btn-link">Resume</button></a></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="whatsapp">
       <h2><a href="https://www.github.com/anomalous254" target="_blank"><span><i class="fa-brands fa-github fa-beat-fade fa-2xl"></i></span>
@@ -59,13 +73,14 @@
 
     <!-- Footer Block -->
     <footer>
-      <p>&copy;2023 all rights reserved | Designed by <span>Peter Nyando</span></p>
+      <p >&copy;2023 all rights reserved | Designed by <span class="footer" >Peter Nyando</span></p>
     </footer>
 
   </div>
   
   
   <!-- loading the javascript file for dom manipulation -->
+  <script src="{% static 'assets/jquery/jquery.js' %}" ></script>
   <script src="{% static 'assets/main.js' %}" ></script>
 </body>
 </html>

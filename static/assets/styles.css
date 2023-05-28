@@ -78,6 +78,43 @@ body{
   color: #ffffff;
   scroll-behavior: smooth;
 }
+ /*
+ * **********************************
+ *  Menu bar  styles for Small views
+ * **********************************
+ */
+ #small-view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--main-bg-color);
+  width: 95vw;
+  height: 100vh;
+  margin-left: 0;
+  display: none;
+ }
+ .small-links{
+  list-style: none;
+ }
+ .small-links > li{
+  line-height: 2.6;
+ }
+ .small-links > li > a{
+  font-size: 2.9rem;
+  text-decoration: none;
+  color: var(--text-color);
+ }
+ #menu-btn{
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+ }
 
 #body-container{
   display: grid;
@@ -630,7 +667,7 @@ footer{
  * **********************************
  */
  .whatsapp{
-  display: none;
+  top: 90%;
  }
  .logo-title{
   font-size: 1rem;
@@ -783,5 +820,12 @@ footer{
  .contact-me-btn{
   padding: 10px;
  }
+ #small-view{
+  top: 10%;
+ }
+ #menu-btn{
+  display: contents;
+ }
+
 
  } 
