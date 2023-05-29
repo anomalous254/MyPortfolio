@@ -555,6 +555,7 @@ footer{
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   background-color: var(--white-darken-1);
+  height: fit-content;
  }
  .achievments-head{
   background-color: var(--top-bar-col);
