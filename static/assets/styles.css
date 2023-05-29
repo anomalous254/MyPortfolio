@@ -826,6 +826,8 @@ footer{
  #menu-btn{
   display: contents;
  }
-
+.fa-github{
+  color: var(--text-color);
+}
 
  } 
