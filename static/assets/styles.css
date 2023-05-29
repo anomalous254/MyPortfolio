@@ -529,6 +529,20 @@ footer{
   padding: 10px;
   list-style: none;
  }
+ .languages{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ #dev-icon{
+  font-size: 2.5rem;
+  margin-right: 20px;
+  margin-bottom: 20px;
+ }
+ .skills{
+  color: var(--text-color);
+  margin-top: 10px;
+  font-size: 1.2rem;
+ }
 
  /*
  * **********************************
